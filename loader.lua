@@ -5,6 +5,9 @@ if a == 5543622168 then -- Place ID / Game ID
 
                         elseif a == 2017674707 then -- Place ID / Game ID
                             loadstring(game:HttpGet("https://raw.githubusercontent.com/roxyrekt/HubORScript/main/youtubelifesim.lua"))() --Loadstring
+  
+                        elseif a == 3054673486 then -- Place ID / Game ID
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/roxyrekt/HubORScript/main/ysxnc.lua"))() --Loadstring
 
                         else game.Players.LocalPlayer:Kick("The game is not supported by this script")
 end
