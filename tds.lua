@@ -10,7 +10,7 @@ boostagems:NewToggle("Instant Boost & Gems", "ToggleInfo", function(state)
     getgenv().boostandgems = state
 end)
 
-while true do
+while wait() do
     if getgenv().boostandgems then
         game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("DailyReward")
     end
