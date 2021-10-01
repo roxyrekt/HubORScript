@@ -8,9 +8,10 @@ local boostagems = all:NewSection("Boost And Gems")
 
 boostagems:NewToggle("Instant Boost & Gems", "ToggleInfo", function(state)
     getgenv().boostandgems = state
-    
-    while true do
-    if getgenv().boostandgems == false then break end
-    game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("DailyReward")
-end
 end)
+
+while true do
+    if getgenv().boostandgems then
+        game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("DailyReward")
+    end
+end
