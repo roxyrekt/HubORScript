@@ -1,4 +1,4 @@
-local URL = "https://raw.githubusercontent.com/roxyrekt/HubORScript/main/"
+local URL = "https://raw.githubusercontent.com/roxyrekt/HubORScript/main"
 
 local games = {
     [393890079] = "Roblox Flip"
